@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Axios , * as others from 'axios';
+import Axios from 'axios';
 import { ParamsList } from './paramsList';
 import { ParamItemSelect } from './paramItemSelect';
 

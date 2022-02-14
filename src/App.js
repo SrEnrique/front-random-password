@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { ParamsList } from './components/paramsList';
+import React from 'react';
+
 import FormGeneratePassword from './components/formGeneratePassword';
 
 

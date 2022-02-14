@@ -1,7 +1,5 @@
 import React from 'react'
-import Select from 'react-select'
 
-var options = []
 
 
 function length_options (length) {
@@ -13,9 +11,6 @@ function length_options (length) {
 }
 
 
-const MyComponent = () => (
-  <Select options={options} />
-)
 
 export  function ParamItemSelect() {
     var options = length_options(60);

@@ -28,9 +28,8 @@ jobs:
         with:
           node-version: 16.13.2
           cache: 'npm'
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm test
+      - run: npm run build 
+
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
