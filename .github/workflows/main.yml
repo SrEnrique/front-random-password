@@ -40,5 +40,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: dotlogxyz/randompasswordgeneratorapi:latest
+          tags: dotlogxyz/front-randompassword:latest
       
