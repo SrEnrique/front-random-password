@@ -28,6 +28,7 @@ jobs:
         with:
           node-version: 16.13.2
           cache: 'npm'
+      - run: npm ci
       - run: npm run build 
 
       
