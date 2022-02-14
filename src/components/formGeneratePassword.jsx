@@ -6,7 +6,7 @@ import { ParamItemSelect } from './paramItemSelect';
 function FormGeneratePassword() {
 
 
-    const url = "http://localhost/api/password/generate";
+    const url = "http://password.dotlog.xyz:8080/api/password/generate";
     const [data, setData] = useState({
         pass_length: 6,
         symbols: true,
