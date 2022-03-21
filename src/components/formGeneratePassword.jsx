@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import Axios from 'axios';
 import { ParamsList } from './paramsList';
 import { ParamItemSelect } from './paramItemSelect';
+import './formGeneratePassword.css';
+
 
 function FormGeneratePassword() {
 
@@ -39,7 +41,9 @@ function FormGeneratePassword() {
             document.getElementById("password").value = res.data.password;
         })
     }
-    return <div>
+    
+    return <div class='container'> <div>
+        <h1>Generador de contrasenas</h1>
         <form onChange={(e) => handle(e)} onSubmit={(e) =>  submit(e)}>
             <ParamItemSelect ></ParamItemSelect>
             <ParamsList params={[
@@ -49,12 +53,15 @@ function FormGeneratePassword() {
                 { id:4, name: "uppercase", description: "Uppercase", checked: true },
                 { id:5, name: "ambiguous", description: "Ambiguous", checked: true }
             ]} ></ParamsList>
-            <button>Submit</button>
+            <div className="container">
+                <button>Generar</button>
+
+            </div>
         </form>
         <div>
-            <input id="password" type="text"/>
+            <input class="password-input" id="password" type="text"/>
         </div>
-    </div>;
+    </div>   </div>;
 }
 
 FormGeneratePassword.propTypes = {};
