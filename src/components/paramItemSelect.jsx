@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './paramItemSelect.css'
 
 
 function length_options (length) {
@@ -14,10 +14,10 @@ function length_options (length) {
 
 export  function ParamItemSelect() {
     var options = length_options(60);
-  return <div>
+  return <div class="container-select">
         <label for="pass_length">Numero de caracteres: </label>
 
-        <select key="slect_pass" name="pass_length" id="pass_length">
+        <select key="slect_pass" name="pass_length" id="pass_length" class="select">
             {options.map((option) => (
                 <option key={option.key} value={option.value}>{option.label}</option>
             )) }
